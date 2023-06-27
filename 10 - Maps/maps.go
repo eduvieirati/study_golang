@@ -9,7 +9,7 @@ func main(){
 	}
 
 	fmt.Println(usuario["nome"])
-
+	 
 	usuario2 := map[string]map[string]string{
 		"nome": {
 			"primeiro": "David",
@@ -25,9 +25,9 @@ func main(){
 	delete(usuario2, "nome") //Deleta uma chave
 	fmt.Println(usuario2)
 
-	usuario2["sobrenome"] = map[string]string{
+	usuario2["signo"] = map[string]string{
 		"nome": "Cancêr", 
 	}
 	
-	fmt.Println(usuario2a)
+	fmt.Println(usuario2)
 }
