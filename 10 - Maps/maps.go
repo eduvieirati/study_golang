@@ -2,21 +2,21 @@ package main
 
 import "fmt"
 
-func main(){
+func main() {
 	usuario := map[string]string{
-		"nome": "Pedro",
+		"nome":      "Pedro",
 		"sobrenome": "Eduardo",
 	}
 
 	fmt.Println(usuario["nome"])
-	 
+
 	usuario2 := map[string]map[string]string{
 		"nome": {
 			"primeiro": "David",
-			"ultimo": "Eduardo",
+			"ultimo":   "Eduardo",
 		},
-		"curso":{
-			"nome" : "ADS",
+		"curso": {
+			"nome":   "ADS",
 			"campus": "Estácio",
 		},
 	}
@@ -26,8 +26,8 @@ func main(){
 	fmt.Println(usuario2)
 
 	usuario2["signo"] = map[string]string{
-		"nome": "Cancêr", 
+		"nome": "Cancêr",
 	}
-	
+
 	fmt.Println(usuario2)
 }
